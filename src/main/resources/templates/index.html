@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Chuck Norris Jokes</title>
-</head>
+<title>Chuck Norris Jokes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-    <h1>Chuck Norris Joke</h1>
-    <p th:text="${joke}">Show Joke here....</p>
+
+<div class="w3-container">
+    <h1 class="w3-center w3-blue">Spring Boot Application</h1>
+    <br>
+    <br>
+    <div class="w3-card-4" style="width:100%;">
+        <header class="w3-container w3-center">
+            <h2>Chuck Norris Joke</h2>
+        </header>
+
+        <div class="w3-container w3-green w3-center">
+            <p th:text="${joke}"></p>
+        </div>
+
+        <footer class="w3-container w3-center">
+            <h5>Refresh Page to Read New Joke</h5>
+        </footer>
+    </div>
+</div>
+
 </body>
 </html>
